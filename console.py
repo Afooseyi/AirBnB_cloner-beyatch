@@ -30,7 +30,6 @@ class HBNBCommand(cmd.Cmd):
                 'User',
                 'City'
                 ]
-    file = None
 
     def do_EOF(self, args):
         """ Handles end of file"""
