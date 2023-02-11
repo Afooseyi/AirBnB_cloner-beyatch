@@ -1,11 +1,10 @@
 #!/usr/bin/python3
-""" Class Amenity that inherits from base model"""
-
 from models.base_model import BaseModel
+"""amenities model"""
 
 
 class Amenity(BaseModel):
-    """ Class Amenity that inherits from base model """
+    """ Class Amenity that inherits from base_model """
     name = ""
 
     def __init__(self, *args, **kwargs):

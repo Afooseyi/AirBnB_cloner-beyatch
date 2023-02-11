@@ -1,8 +1,6 @@
 #!/usr/bin/python3
-""" module models """
-
-
 from models.engine.file_storage import FileStorage
+"""__init__ module"""
 
 classes = {'BaseModel': 'BaseModel', 'Amenity': 'Amenity', 'State': 'State',
            'Place': 'Place', 'Review': 'Review', 'User': 'User'}

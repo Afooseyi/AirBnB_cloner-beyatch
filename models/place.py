@@ -1,13 +1,12 @@
 #!/usr/bin/python3
-""" Class Place that inherits from base model"""
-
 from models.base_model import BaseModel
+"""place model"""
 
 
 class Place(BaseModel):
-    """ Class Place that inherits from base model """
-    city_id = ""  # string - empty string: it will be the City.id
-    user_id = ""  # string - empty string: it will be the User.id
+    """ Class Place that inherits from base_model """
+    city_id = ""
+    user_id = ""
     name = ""
     description = ""
     number_rooms = 0
@@ -16,7 +15,7 @@ class Place(BaseModel):
     price_by_night = 0
     latitude = 0.0
     longitude = 0.0
-    amenity_ids = []  # list of string: it will be the list of Amenity.id
+    amenity_ids = []
 
     def __init__(self, *args, **kwargs):
         """ Constructor """
