@@ -43,7 +43,6 @@ class HBNBCommand(cmd.Cmd):
         """Creates an instance of BaseModel"""
         if argument:
             cls_name, instance_id = argument.split()
-            print(cls_name)
             if cls_name in self.classes:
                 # instance = models.base_model.BaseModel()
                 get_class = getattr(sys.modules[__name__], argument)
@@ -126,6 +125,7 @@ class HBNBCommand(cmd.Cmd):
                     listI.append(representation_Class)
             # if listI:
             print(listI)
+
     def do_update(self, argument):
         """
         Updates an instance based on the class
